@@ -3606,6 +3606,16 @@ public final class Settings {
         public static final String NAVIGATION_BAR_SHOW = "navigation_bar_show";
 
         /**
+         * Colors used for the color picker panel puttons
+         * 0: Benzo colors
+         * 1: Material colors
+         * 2: RGB colors
+         * default: 0
+         * @hide
+         */
+        public static final String COLOR_PICKER_PALETTE = "color_picker_palette";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
