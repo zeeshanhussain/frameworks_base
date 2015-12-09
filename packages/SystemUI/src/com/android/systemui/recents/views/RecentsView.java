@@ -429,6 +429,10 @@ public class RecentsView extends FrameLayout implements TaskStackView.TaskStackV
     @Override
     protected void onAttachedToWindow () {
         super.onAttachedToWindow();
+        mMemText = (TextView) ((View)getParent()).findViewById(R.id.recents_memory_text);
+        mMemBar = (ProgressBar) ((View)getParent()).findViewById(R.id.recents_memory_bar);
+        updateMemoryStatus();
+
         mClearRecents = ((View)getParent()).findViewById(R.id.clear_recents);
         mClearRecents.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
