@@ -3629,6 +3629,12 @@ public final class Settings {
         public static final String COLOR_PICKER_PALETTE = "color_picker_palette";
 
         /**
+         * Enable vibration when double tapping the power button for camera
+         * @hide
+         */
+        public static final String DOUBLE_TAP_VIBRATE = "double_tap_vibrate";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
